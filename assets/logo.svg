@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64" role="img" aria-label="Lutz Custom Wakeboards">
+  <defs>
+    <linearGradient id="lg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22E1FF"/>
+      <stop offset="60%" stop-color="#7C5CFF"/>
+      <stop offset="100%" stop-color="#B84CFF"/>
+    </linearGradient>
+    <mask id="lg-bolt">
+      <rect x="0" y="0" width="64" height="64" fill="#fff"/>
+      <path d="M36.5 12 L21 34.5 h9.5 L26 52 L43 29.5 h-9.5 Z" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- Board-Silhouette mit ausgespartem Blitz -->
+  <g transform="rotate(-24 32 32)">
+    <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+          fill="url(#lg-grad)" mask="url(#lg-bolt)"/>
+    <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+          fill="none" stroke="#FF5A2B" stroke-width="1.6" opacity="0.85"/>
+  </g>
+
+  <!-- Wortmarke -->
+  <text x="74" y="30" font-family="Space Grotesk, Inter, sans-serif" font-size="25" font-weight="700"
+        fill="#EDF1F8" letter-spacing="-0.5">LUTZ</text>
+  <text x="74" y="47" font-family="Space Grotesk, Inter, sans-serif" font-size="9.5" font-weight="600"
+        fill="#6C7A96" letter-spacing="3.4">CUSTOM WAKEBOARDS</text>
+</svg>

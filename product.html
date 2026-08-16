@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Board — Lutz Custom Wakeboards</title>
+<meta name="description" content="Handgefertigtes Custom Wakeboard von Lutz Custom Wakeboards. Größe wählen, in den Warenkorb legen oder im Generator weiter anpassen.">
+<meta name="theme-color" content="#06090F">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="topbar">
+  <div class="topbar__track">
+    <span>Handgefertigt in Deutschland</span>
+    <span>Versand innerhalb DE kostenlos</span>
+    <span>3 Jahre Garantie auf Delamination</span>
+    <span>Dein Design, dein Board</span>
+    <span>Handgefertigt in Deutschland</span>
+    <span>Versand innerhalb DE kostenlos</span>
+    <span>3 Jahre Garantie auf Delamination</span>
+    <span>Dein Design, dein Board</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="Lutz Custom Wakeboards — Startseite">
+      <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="hdr-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#22E1FF"/>
+            <stop offset="60%" stop-color="#7C5CFF"/>
+            <stop offset="100%" stop-color="#B84CFF"/>
+          </linearGradient>
+          <mask id="hdr-bolt">
+            <rect width="64" height="64" fill="#fff"/>
+            <path d="M36.5 12 L21 34.5 h9.5 L26 52 L43 29.5 h-9.5 Z" fill="#000"/>
+          </mask>
+        </defs>
+        <g transform="rotate(-24 32 32)">
+          <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+                fill="url(#hdr-grad)" mask="url(#hdr-bolt)"/>
+          <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+                fill="none" stroke="#FF5A2B" stroke-width="1.6" opacity="0.85"/>
+        </g>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name">LUTZ</span>
+        <span class="logo__sub">Custom Wakeboards</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="index.html#generator">Board bauen</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#bestseller">Bestseller</a>
+      <a href="index.html#manufaktur">Manufaktur</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary btn--sm" href="index.html#generator">Jetzt konfigurieren</a>
+      <button class="icon-btn" type="button" data-cart-open aria-label="Warenkorb öffnen">
+        <span data-icon="cart"></span>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </button>
+      <button class="icon-btn burger" type="button" aria-label="Menü" aria-expanded="false">
+        <span data-icon="menu"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Start</a> <span>/</span>
+      <a href="index.html#shop">Wakeboards</a> <span>/</span>
+      <span data-pdp-crumb>Board</span>
+    </nav>
+
+    <div class="pdp">
+      <!-- Galerie -->
+      <div class="gallery">
+        <div class="gallery__main" data-gallery-main></div>
+        <div class="gallery__thumbs" data-gallery-thumbs></div>
+      </div>
+
+      <!-- Kaufbereich -->
+      <div>
+        <div data-pdp-badge></div>
+        <h1 class="pdp__title" style="font-size:clamp(2.2rem,4.6vw,3.4rem)" data-pdp-title>Board</h1>
+        <p class="pdp__tagline" data-pdp-tagline></p>
+        <div class="pdp__meta" data-pdp-meta></div>
+
+        <div class="pdp__price" data-pdp-price></div>
+
+        <div class="pdp__block">
+          <span class="field-label">Boardlänge wählen</span>
+          <div class="options options--4" data-pdp-sizes></div>
+        </div>
+
+        <div class="pdp__actions">
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <div class="qty">
+              <button type="button" data-qty="-1" aria-label="Menge verringern">−</button>
+              <output data-qty-value>1</output>
+              <button type="button" data-qty="1" aria-label="Menge erhöhen">+</button>
+            </div>
+            <span style="font-size:.85rem;color:var(--text-mute)">Lieferzeit 3–4 Wochen</span>
+          </div>
+
+          <div class="buy-row">
+            <button class="btn btn--primary btn--lg" type="button" data-add>In den Warenkorb</button>
+            <button class="btn btn--solid btn--lg" type="button" data-buy>Jetzt kaufen</button>
+          </div>
+
+          <a class="btn btn--ghost btn--block" href="index.html#generator" data-gen-link>
+            Dieses Design im Generator anpassen
+          </a>
+        </div>
+
+        <div class="assurance">
+          <div><span data-icon="truck"></span> Versandkostenfrei innerhalb Deutschlands</div>
+          <div><span data-icon="shield"></span> 3 Jahre Garantie auf Kern und Delamination</div>
+          <div><span data-icon="tools"></span> Handgefertigt — kein Board gleicht exakt dem anderen</div>
+        </div>
+
+        <!-- Details -->
+        <div class="accordion">
+          <div class="acc__item">
+            <button class="acc__trigger" type="button" aria-expanded="true">
+              Die Geschichte dazu <span class="acc__icon" data-icon="plus"></span>
+            </button>
+            <div class="acc__panel is-open"><div><div class="acc__body">
+              <p data-pdp-story></p>
+              <ul class="feature__list" style="margin-top:18px" data-pdp-highlights></ul>
+            </div></div></div>
+          </div>
+
+          <div class="acc__item">
+            <button class="acc__trigger" type="button" aria-expanded="false">
+              Technische Daten <span class="acc__icon" data-icon="plus"></span>
+            </button>
+            <div class="acc__panel"><div><div class="acc__body">
+              <table class="spec-table"><tbody data-pdp-specs></tbody></table>
+            </div></div></div>
+          </div>
+
+          <div class="acc__item">
+            <button class="acc__trigger" type="button" aria-expanded="false">
+              Lieferung &amp; Rückgabe <span class="acc__icon" data-icon="plus"></span>
+            </button>
+            <div class="acc__panel"><div><div class="acc__body">
+              <p>Jedes Board wird nach deiner Freigabe gebaut. Von der Bestellung bis zum Versand
+                 vergehen 3–4 Wochen; du bekommst ein Foto, bevor wir einpacken. Versand innerhalb
+                 Deutschlands ist kostenlos, EU-weit 24 €.</p>
+              <p style="margin-top:12px">Nicht zufrieden? Individuell gefertigte Boards sind vom
+                 Widerruf ausgenommen — wenn wir aber etwas falsch gemacht haben, bauen wir es neu.
+                 Ohne Diskussion.</p>
+            </div></div></div>
+          </div>
+
+          <div class="acc__item">
+            <button class="acc__trigger" type="button" aria-expanded="false">
+              Pflege <span class="acc__icon" data-icon="plus"></span>
+            </button>
+            <div class="acc__panel"><div><div class="acc__body">
+              <p>Nach jeder Session mit Süßwasser abspülen und im Schatten trocknen lassen —
+                 UV ist der größte Feind des Klarlacks. Nicht dauerhaft im heißen Auto lagern.
+                 Kleine Kratzer in der Base lassen sich mit Reparaturharz auffüllen; schick uns
+                 im Zweifel ein Foto.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Weitere Boards -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Passt auch</span>
+          <h2>Weitere Boards</h2>
+        </div>
+        <a class="btn btn--ghost" href="index.html#shop">Alle Designs</a>
+      </div>
+      <div class="grid-products" data-related></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Lutz Custom Wakeboards">
+          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="ftr-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#22E1FF"/>
+                <stop offset="60%" stop-color="#7C5CFF"/>
+                <stop offset="100%" stop-color="#B84CFF"/>
+              </linearGradient>
+              <mask id="ftr-bolt">
+                <rect width="64" height="64" fill="#fff"/>
+                <path d="M36.5 12 L21 34.5 h9.5 L26 52 L43 29.5 h-9.5 Z" fill="#000"/>
+              </mask>
+            </defs>
+            <g transform="rotate(-24 32 32)">
+              <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+                    fill="url(#ftr-grad)" mask="url(#ftr-bolt)"/>
+            </g>
+          </svg>
+          <span class="logo__text">
+            <span class="logo__name">LUTZ</span>
+            <span class="logo__sub">Custom Wakeboards</span>
+          </span>
+        </a>
+        <p class="footer__about">
+          Elektromeister von Beruf, Wakeboarder aus Überzeugung. Seit 2021 baut Lutz Boards,
+          die aussehen wie ihre Fahrer — und nicht wie ein Katalog.
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="index.html#generator">Board-Generator</a></li>
+          <li><a href="index.html#shop">Alle Designs</a></li>
+          <li><a href="product.html?id=voltage">Bestseller Voltage</a></li>
+          <li><a href="index.html#manufaktur">Manufaktur</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Service</h4>
+        <ul>
+          <li><a href="index.html#manufaktur">Lieferzeiten</a></li>
+          <li><a href="index.html#manufaktur">Größenberatung</a></li>
+          <li><a href="#">Rückgabe</a></li>
+          <li><a href="mailto:hallo@lutz-wakeboards.de">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+          <li><a href="#">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Lutz Custom Wakeboards · Demo-Shop ohne echte Bestellfunktion</span>
+      <div class="socials">
+        <a class="icon-btn" href="#" aria-label="Instagram"><span data-icon="instagram"></span></a>
+        <a class="icon-btn" href="#" aria-label="YouTube"><span data-icon="youtube"></span></a>
+        <a class="icon-btn" href="mailto:hallo@lutz-wakeboards.de" aria-label="E-Mail"><span data-icon="mail"></span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/board.js"></script>
+<script src="js/products.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/product-page.js"></script>
+</body>
+</html>

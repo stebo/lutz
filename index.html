@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lutz Custom Wakeboards — Bau dir dein Board</title>
+<meta name="description" content="Handgefertigte Custom Wakeboards aus Deutschland. Gestalte dein Board im Generator: Farben, Grafik, Größe, Schriftzug — und bestelle es direkt.">
+<meta name="theme-color" content="#06090F">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lutz Custom Wakeboards — Bau dir dein Board">
+<meta property="og:description" content="Dein Design, unser Handwerk. Custom Wakeboards, in Deutschland gefertigt.">
+<meta property="og:image" content="assets/board-voltage.jpg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ===================== Laufband ===================== -->
+<div class="topbar">
+  <div class="topbar__track">
+    <span>Handgefertigt in Deutschland</span>
+    <span>Versand innerhalb DE kostenlos</span>
+    <span>3 Jahre Garantie auf Delamination</span>
+    <span>Dein Design, dein Board</span>
+    <span>Handgefertigt in Deutschland</span>
+    <span>Versand innerhalb DE kostenlos</span>
+    <span>3 Jahre Garantie auf Delamination</span>
+    <span>Dein Design, dein Board</span>
+  </div>
+</div>
+
+<!-- ===================== Header ===================== -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="Lutz Custom Wakeboards — Startseite">
+      <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="hdr-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#22E1FF"/>
+            <stop offset="60%" stop-color="#7C5CFF"/>
+            <stop offset="100%" stop-color="#B84CFF"/>
+          </linearGradient>
+          <mask id="hdr-bolt">
+            <rect width="64" height="64" fill="#fff"/>
+            <path d="M36.5 12 L21 34.5 h9.5 L26 52 L43 29.5 h-9.5 Z" fill="#000"/>
+          </mask>
+        </defs>
+        <g transform="rotate(-24 32 32)">
+          <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+                fill="url(#hdr-grad)" mask="url(#hdr-bolt)"/>
+          <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+                fill="none" stroke="#FF5A2B" stroke-width="1.6" opacity="0.85"/>
+        </g>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name">LUTZ</span>
+        <span class="logo__sub">Custom Wakeboards</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#generator">Board bauen</a>
+      <a href="#shop">Shop</a>
+      <a href="#bestseller">Bestseller</a>
+      <a href="#manufaktur">Manufaktur</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary btn--sm" href="#generator">Jetzt konfigurieren</a>
+      <button class="icon-btn" type="button" data-cart-open aria-label="Warenkorb öffnen">
+        <span data-icon="cart"></span>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </button>
+      <button class="icon-btn burger" type="button" aria-label="Menü" aria-expanded="false">
+        <span data-icon="menu"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== Hero ===================== -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <span class="eyebrow">Custom Wakeboards aus der Werkstatt</span>
+      <h1 class="hero__title">Dein Design.<br>Unser <span>Handwerk.</span></h1>
+      <p class="hero__lead">
+        Kein Board von der Stange. Du wählst Farben, Grafik, Länge und deinen Schriftzug —
+        wir lackieren, pressen und polieren es in Handarbeit. Ein Board, das es sonst nirgendwo gibt.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="#generator">Board konfigurieren</a>
+        <a class="btn btn--ghost btn--lg" href="#shop">Fertige Designs ansehen</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>340+</strong><span>gebaute Boards</span></div>
+        <div><strong>3–4</strong><span>Wochen Lieferzeit</span></div>
+        <div><strong>4,9 ★</strong><span>aus 231 Bewertungen</span></div>
+      </div>
+    </div>
+
+    <div class="hero__board">
+      <div data-hero-board></div>
+      <div class="hero__tag hero__tag--1"><i>🎨</i> Über 40.000 Kombinationen</div>
+      <div class="hero__tag hero__tag--2"><i>⚡</i> Handlackiert in Deutschland</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Vertrauensleiste ===================== -->
+<section class="trustbar">
+  <div class="container trustbar__inner">
+    <div class="trustbar__item"><span data-icon="tools"></span>
+      <span><strong>Handarbeit statt Serie</strong>Jedes Board einzeln lackiert</span></div>
+    <div class="trustbar__item"><span data-icon="truck"></span>
+      <span><strong>Versandkostenfrei</strong>Innerhalb Deutschlands</span></div>
+    <div class="trustbar__item"><span data-icon="shield"></span>
+      <span><strong>3 Jahre Garantie</strong>Auf Kern und Delamination</span></div>
+    <div class="trustbar__item"><span data-icon="map"></span>
+      <span><strong>Made in Germany</strong>Werkstatt am See</span></div>
+  </div>
+</section>
+
+<!-- ===================== Generator ===================== -->
+<section class="section generator" id="generator" data-generator>
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Der Board-Generator</span>
+        <h2>Bau dir dein Board<br>in vier Schritten.</h2>
+        <p>
+          Farben, Grafik, Länge, Schriftzug — die Vorschau zeigt dir sofort, wie dein Board aussieht,
+          und der Preis rechnet live mit. Zufrieden? Dann direkt in den Warenkorb.
+        </p>
+      </div>
+    </div>
+
+    <div class="gen__grid">
+      <!-- Vorschau -->
+      <div class="gen__preview reveal">
+        <div class="gen__preview-head">
+          <h3 data-gen-name>Dein Board</h3>
+          <span style="font-size:.78rem;color:var(--text-mute)">Live-Vorschau</span>
+        </div>
+        <div class="gen__stage" data-gen-stage></div>
+        <div class="gen__chips" data-gen-chips></div>
+      </div>
+
+      <!-- Steuerung -->
+      <div class="gen__panel reveal" data-gen-panel>
+        <noscript>
+          <div class="gen__step">
+            <p>Für den Board-Generator wird JavaScript benötigt. Schreib uns sonst einfach,
+               welche Farben du dir vorstellst — wir schicken dir einen Entwurf.</p>
+          </div>
+        </noscript>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Bestseller ===================== -->
+<section class="section" id="bestseller">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <img src="assets/board-voltage.jpg" alt="Wakeboard Voltage in Mitternachtsblau mit violettem Verlauf und Bindungen"
+             width="1124" height="1055">
+        <div class="feature__stamp">
+          <span><b>Voltage</b>Midnight Blue → Ultraviolett</span>
+          <span>Meistverkauftes Board 2026</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <span class="eyebrow">Bestseller</span>
+        <h2>Voltage.</h2>
+        <p class="hero__lead" style="margin-top:16px">
+          Das Board, mit dem alles angefangen hat: tiefes Mitternachtsblau, das über die Länge in
+          Ultraviolett kippt, dazu eine orange Kante, die man auch aus 50 Metern noch am Kicker erkennt.
+        </p>
+        <ul class="feature__list" data-best-list></ul>
+        <div class="price-tag" data-best-price></div>
+        <div class="buy-row">
+          <a class="btn btn--primary btn--lg" href="product.html?id=voltage">Zum Board</a>
+          <button class="btn btn--ghost btn--lg" type="button" data-quick-add>Direkt in den Warenkorb</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Shop ===================== -->
+<section class="section section--tight" id="shop">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Fertige Designs</span>
+        <h2>Aus der Werkstatt</h2>
+        <p>
+          Entwürfe, die wir selbst gefahren sind. Jedes davon lässt sich im Generator als
+          Ausgangspunkt nehmen und weiter verändern.
+        </p>
+      </div>
+      <a class="btn btn--ghost" href="#generator">Eigenes Design starten</a>
+    </div>
+
+    <div class="grid-products" data-product-grid></div>
+  </div>
+</section>
+
+<!-- ===================== Manufaktur ===================== -->
+<section class="section" id="manufaktur">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">So entsteht dein Board</span>
+        <h2>Vom Klick zur Werkstatt</h2>
+        <p>Vier Schritte, ein Board. Zwischendrin bekommst du Fotos — bei uns verschwindet
+           keine Bestellung in einer Blackbox.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__icon"><span data-icon="palette"></span></div>
+        <h3>Konfigurieren</h3>
+        <p>Farben, Grafik, Länge und Schriftzug im Generator zusammenstellen — live sehen,
+           was dabei rauskommt.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__icon"><span data-icon="check"></span></div>
+        <h3>Entwurf freigeben</h3>
+        <p>Innerhalb von zwei Werktagen bekommst du eine maßstabsgetreue Zeichnung deines
+           Boards zur Freigabe.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__icon"><span data-icon="tools"></span></div>
+        <h3>Bauen &amp; lackieren</h3>
+        <p>Holzkern, Glasfaser, Pressform. Danach Handlackierung und zwei Schichten
+           2K-Klarlack.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__icon"><span data-icon="truck"></span></div>
+        <h3>Ab auf den See</h3>
+        <p>Versandfertig nach 3–4 Wochen, inklusive Foto vor dem Verpacken und passendem
+           Board-Bag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <svg class="cta-band__bolt" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/>
+      </svg>
+      <span class="eyebrow" style="justify-content:center">Noch unentschlossen?</span>
+      <h2>Schick uns deine Idee.</h2>
+      <p>
+        Du hast eine Farbkombination im Kopf, die der Generator nicht hergibt? Schreib uns —
+        Lutz zeichnet dir einen Entwurf, kostenlos und unverbindlich.
+      </p>
+      <div class="hero__cta" style="justify-content:center">
+        <a class="btn btn--primary btn--lg" href="#generator">Generator öffnen</a>
+        <a class="btn btn--ghost btn--lg" href="mailto:hallo@lutz-wakeboards.de">
+          <span data-icon="mail"></span> hallo@lutz-wakeboards.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== Footer ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Lutz Custom Wakeboards">
+          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="ftr-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#22E1FF"/>
+                <stop offset="60%" stop-color="#7C5CFF"/>
+                <stop offset="100%" stop-color="#B84CFF"/>
+              </linearGradient>
+              <mask id="ftr-bolt">
+                <rect width="64" height="64" fill="#fff"/>
+                <path d="M36.5 12 L21 34.5 h9.5 L26 52 L43 29.5 h-9.5 Z" fill="#000"/>
+              </mask>
+            </defs>
+            <g transform="rotate(-24 32 32)">
+              <path d="M32 3 C41 3 48 15 48 32 C48 49 41 61 32 61 C23 61 16 49 16 32 C16 15 23 3 32 3 Z"
+                    fill="url(#ftr-grad)" mask="url(#ftr-bolt)"/>
+            </g>
+          </svg>
+          <span class="logo__text">
+            <span class="logo__name">LUTZ</span>
+            <span class="logo__sub">Custom Wakeboards</span>
+          </span>
+        </a>
+        <p class="footer__about">
+          Elektromeister von Beruf, Wakeboarder aus Überzeugung. Seit 2021 baut Lutz Boards,
+          die aussehen wie ihre Fahrer — und nicht wie ein Katalog.
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#generator">Board-Generator</a></li>
+          <li><a href="#shop">Alle Designs</a></li>
+          <li><a href="product.html?id=voltage">Bestseller Voltage</a></li>
+          <li><a href="#manufaktur">Manufaktur</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Service</h4>
+        <ul>
+          <li><a href="#manufaktur">Lieferzeiten</a></li>
+          <li><a href="#manufaktur">Größenberatung</a></li>
+          <li><a href="#">Rückgabe</a></li>
+          <li><a href="mailto:hallo@lutz-wakeboards.de">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+          <li><a href="#">Widerruf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Lutz Custom Wakeboards · Demo-Shop ohne echte Bestellfunktion</span>
+      <div class="socials">
+        <a class="icon-btn" href="#" aria-label="Instagram"><span data-icon="instagram"></span></a>
+        <a class="icon-btn" href="#" aria-label="YouTube"><span data-icon="youtube"></span></a>
+        <a class="icon-btn" href="mailto:hallo@lutz-wakeboards.de" aria-label="E-Mail"><span data-icon="mail"></span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/board.js"></script>
+<script src="js/products.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/generator.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

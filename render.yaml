@@ -1,0 +1,49 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Die Seite ist reines HTML/CSS/JS, es gibt nichts zu bauen.
+services:
+  - type: web
+    name: lutz-custom-wakeboards
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      # Assets dürfen lange im Cache liegen, HTML nicht.
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /css/*
+        name: Cache-Control
+        value: public, max-age=604800
+      - path: /js/*
+        name: Cache-Control
+        value: public, max-age=604800
+
+    routes:
+      # Hübsche URLs
+      - type: rewrite
+        source: /product
+        destination: /product.html
+      - type: rewrite
+        source: /product-2
+        destination: /product_2.html
+
+      # Es liegen zwei Design-Fassungen im Repo:
+      #   /             → index.html    (Design A, dunkel)
+      #   /index_2.html → index_2.html  (Design B, hell)
+      #
+      # Beide sind über ihre URLs erreichbar — praktisch zum Vergleichen.
+      # Soll Design B die Startseite werden, benenne index_2.html in
+      # index.html um (und product_2.html in product.html). Alternativ
+      # reicht diese Umleitung, dann bleiben die Dateinamen wie sie sind:
+      #
+      # - type: rewrite
+      #   source: /
+      #   destination: /index_2.html
